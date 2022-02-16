@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/todo.min.css" />
+    <title>ToDo</title>
+  </head>
+  <body>
+    <form method="GET" class="send-form block">
+      <label for="todo" class="add-todo">New Todo<br /></label>
+
+      <input
+        type="text"
+        placeholder="Что нужно сделать?"
+        id="todo"
+        class="input-todo"
+      />
+
+      <div class="priority-list">
+        <input type="radio" id="high" name="contact" value="1" />
+        <label class="priority priority1" for="high">high</label>
+        <input type="radio" id="medium" name="contact" value="2" checked />
+        <label class="priority priority2" for="medium">medium</label>
+        <input type="radio" id="low" name="contact" value="3" />
+        <label class="priority priority3" for="low">low</label>
+      </div>
+
+      <button class="button">Add Todo</button>
+    </form>
+
+    <div class="my-todo-list block">
+      <h2>My Todo List</h2>
+      <span>Click - done, DoubleClick - delete</span>
+      <div class="todo-list">
+        <p class="todo-item priority">Пока нет записей</p>
+      </div>
+    </div>
+    <div class="alert">
+      <h3></h3>
+    </div>
+    <div class="done">
+      <h3></h3>
+    </div>
+    <script src="./todo.js"></script>
+  </body>
+</html>
